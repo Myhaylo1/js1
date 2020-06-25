@@ -374,44 +374,326 @@
 // }
 
 
+// let operand1=prompt('Input 1st operand');
+//
+// if (!isNaN(operand1) && operand1!=='')
+//  {
+//   operand1=Number(operand1);
+//   let operand2 = prompt('Input 2st operand');
+//   if (!isNaN(operand2) && operand2!=='')
+//   {
+//     operand2=Number(operand2);
+//     let operand3 = prompt('Choose Your case: 1 - to Add, 2 - to Sub, 3 - to Mul, 4 - to Div');
+//     let a;
+//     // switch (operand3) {
+//     //   case '1': a=add(operand1,operand2); break;
+//     //   case '2': a=sub(operand1,operand2); break;
+//     //   case '3': a=mul(operand1,operand2); break;
+//     //   case '4': a=div(operand1,operand2); break;
+//     //  }
+//     // if (a!==undefined) alert(a); else alert('Operands are not executable');
+//     switch (operand3) {
+//       case '1': a=add; break;
+//       case '2': a=sub; break;
+//       case '3': a=mul; break;
+//       case '4': a=div; break;
+//      }
+//     if (typeof a==='function') alert(a(operand1,operand2)); else alert('Operands are not executable');
+//   }
+//  }
+//
+// function add(a,b) {
+//   return a+b;
+// }
+// function sub(a,b) {
+//   return a-b;
+// }
+// function mul(a,b) {
+//   return a*b;
+// }
+// function div(a,b) {
+//   if (b) return a/b;
+// }
 
+// let i=0;
+// while (i<3)
+// {
+// alert(String(i)+'. ПрЮвет ВОЛКУ!!!');
+// i++;
+// }
 
-let operand1=prompt('Input 1st operand');
-if (!isNaN(operand1) && operand1!=='')
- {
-  operand1=Number(operand1);
-  let operand2 = prompt('Input 2st operand');
-  if (!isNaN(operand2) && operand2!=='')
-  {
-    operand2=Number(operand2);
-    let operand3 = prompt('Choose Your case: 1 - to Add, 2 - to Sub, 3 - to Mul, 4 - to Div');
-    let a;
-    // switch (operand3) {
-    //   case '1': a=add(operand1,operand2); break;
-    //   case '2': a=sub(operand1,operand2); break;
-    //   case '3': a=mul(operand1,operand2); break;
-    //   case '4': a=div(operand1,operand2); break;
-    //  }
-    // if (a!==undefined) alert(a); else alert('Operands are not executable');
-    switch (operand3) {
-      case '1': a=add; break;
-      case '2': a=sub; break;
-      case '3': a=mul; break;
-      case '4': a=div; break;
-     }
-    if (typeof a==='function') alert(a(operand1,operand2)); else alert('Operands are not executable');
+// let i=0;
+// while (i<10)
+// {
+//  console.log(i++);
+// }
+
+// let i=0;
+// while (i<10)
+// {
+//  console.log(i);
+//  i++;
+// }
+
+// const password='1';
+// let i=0;
+// let s;
+// while (i++<5)
+// {
+//   s=prompt('Input password');
+//   if (s===password) break;
+// }
+// if (s===password) s='enabled'; else s='denied';
+// alert('access '+s);
+
+// let a=`2+2=${2+2}`;
+// console.log(a);
+// a=`2-2=${2-2}`;
+// console.log(a);
+// a=`2*2=${2*2}`;
+// console.log(a);
+// a=`2/2=${2/2}`;
+// console.log(a);
+//
+// a='2+2='+(2+2);
+// console.log(a);
+// a='2-2='+(2-2);
+// console.log(a);
+// a='2*2='+(2*2);
+// console.log(a);
+// a='2/2='+(2/2);
+// console.log(a);
+
+//let a=`${alert('Your value is "'+prompt('Please input ypur value')+'".')}`;
+//let b=`${alert('Your value is ')}`+`${prompt('Please input ypur value')}`;
+// let a=alert(`Your value is "${prompt('Please input ypur value')}"`);
+
+//let a=alert(`${prompt('Please input the first value')}+${prompt('Please input the second value')}=`);
+//let a=alert(`${Number(prompt('Please input the first value'))}+${Number(prompt('Please input the second value')})=`);
+
+// let a1=`${prompt('Please input the first value')}`;
+// let a2=`${prompt('Please input the second value')}`;
+// alert(a1+'+'+a2+`=${Number(a1)+Number(a2)}`);
+
+// let a1=Number(`${prompt('Please input the first value')}`);
+// let a2=Number(`${prompt('Please input the second value')}`);
+// alert(a1+'+'+a2+`=${a1+a2}`);
+
+// let i=0;
+// while (i++<5) {};
+// console.log(i);
+//
+// do {} while (i++<5);
+// console.log(i);
+
+// const password='1';
+// let i=0;
+// let b=false;
+// do {} while (password!==prompt('Input Your password: ') && i++<3);
+// // i=i<4?'correct':'incorrect'
+// // alert('Password is '+i);
+// alert(`Password is ${i<4?'correct':'incorrect'}`);
+
+// for (let i=0;i<=5;i++)
+// {
+//   console.log(i);
+// }
+
+// function pow(a,b){
+// let c=1;
+//   if (b<0)
+//   {
+//     a=1/a;
+//     b=-b;
+//   }
+//   for (let i=0;i<b;i++) c*=a;
+//   return c;
+// }
+// console.log(`pow(2,3)=8=${pow(2,3)}`);
+// console.log(`pow(2,-3)=0.125=${pow(2,-3)}`);
+// console.log(`pow(2,0)=1=${pow(2,0)}`);
+// console.log(`pow(2,1)=2=${pow(2,1)}`);
+
+// function fib(n)
+// {
+//   a=1;
+//   b=1;
+//   for (i=3;i<=n;i++)
+//   {
+//     c=a+b;
+//     a=b;
+//     b=c;
+//     // console.log('i=',i,'a=',a,' b=',b,' c=',c);
+//   }
+//   return b;
+// }
+// console.log(`fib(1)=1=${fib(1)}`);
+// console.log(`fib(2)=1=${fib(2)}`);
+// console.log(`fib(3)=2=${fib(3)}`);
+// console.log(`fib(4)=3=${fib(4)}`);
+// console.log(`fib(5)=5=${fib(5)}`);
+
+// let tabl={};
+// for (i=2;i<10;i++)
+// {
+//   for (j=1;j<10;j++) {
+//     tabl[`${i}*${j}=`]=i*j;
+//     console.log(tabl[`${i}*${j}=`]);
+//     // console.log(tabl[`${i}`*`${j}`]);
+//   }
+// }
+
+// const a=[1,3,58,8];
+// for (i=0;i<a.length;i++) console.log(a[i]);
+
+// func myArray(){
+//   this.length=0;
+//   this.push=function push(item){
+//     this[this.length++]=iterm;
+//   }
+// }
+//
+// const myArray=new
+
+// let a;
+// let b;
+// console.log(a===b);
+
+// let a=[];
+// a.push(1,2,3,4);
+// console.log(a);
+// a=[6,7,8];
+// console.log(a);
+// a.push(1,2,3,4);
+// console.log(a);
+// a.shift();
+// console.log(a);
+
+// function sum()
+// {
+//   s=0;
+//   for (i=0;i<arguments.length;i++) if (!isNaN(arguments[i])) s+=Number(arguments[i]);
+//   return s;
+// }
+// console.log('sum(1,2,3)=',sum(1,2,3,'4','as'));
+
+// duck=new Object({
+//   name,
+//   fly() {
+//     alert(`${this.name} are flying.`);
+//   },
+//   speak() {
+//     alert(`${this.name} are speaking.`);
+//   },
+// });
+// duck.name='Maha';
+// duckChild=Object.create(duck);
+// duckChild.name='Ducky';
+// duck.fly();
+// duckChild.fly();
+// duck.speak();
+// duckChild.speak();
+
+// animal=new Object({
+//   name: '',
+//   type: '',
+//   food: '',
+//   eat()
+//   {
+//     alert(this.name+' is '+this.type+'. He eats '+this.food+'.');
+//   }
+// })
+// lion=Object.create(animal);
+// lion.name='lion';
+// lion.type='carnivore';
+// lion.food='meat';
+// cow=Object.create(animal);
+// cow.name='cow';
+// cow.type='herbivore';
+// cow.food='grass';
+// bear=Object.create(animal);
+// bear.name='bear';
+// bear.type='omnivore';
+// bear.food='all';
+// lion.eat();
+// cow.eat();
+// bear.eat();
+
+// car={
+//   driver:null,
+//   go()
+//   {
+//     if (!this.driver) return;
+//     alert(`Driver name is ${this.driver.name} ${this.driver.lastName}`);
+//   }
+// }
+// driverIvan={
+//   name:'Ivan',
+//   lastName:'Ivanov',
+// }
+// car.go();
+// car.driver=driverIvan;
+// car.go();
+
+//'use strict';
+
+// function test(){
+//   console.log(this);
+// }
+// test();
+// window.test();
+
+// let a='a';
+// function fun()
+// {
+//   a='b';
+// }
+// fun();
+// console.log(a);
+
+// 1. Вывести # столько раз, сколько указал пользователь.
+// let s = '#';
+// let ss = '';
+// let n = prompt('Input count: ');
+// n = Number(n);
+// if (!isNaN(n)) {
+//   while (n > 0) {
+//     ss = ss + s;
+//     n -= 1;
+//   }
+//   // for (i = 0; i < n; i++) ss=ss+s;
+//   alert(ss);
+// }
+
+// 2. Пользователь ввел число, а на экран вывелись все числа от введенного до 0.
+// let n = prompt('Input value: ');
+// n = Number(n);
+// if (!isNaN(n)) {
+//   let s = '';
+//   while (n>=0) {
+//     s+=  ` ${n}`;
+//     n-=1;
+//   }
+//   alert(s);
+// }
+
+// 3. Запросить число и степень. Возвести число в указанную степень и вывести результат.
+let a = prompt('Input base');
+let b = prompt('Input pow');
+a = Number(a);
+b = Number(b);
+if (!(isNaN(a) && isNaN(b)))
+{
+  let c = 1;
+  if (b < 0) {
+    a = 1 / a;
+    b = -b;
   }
- }
-
-function add(a,b) {
-  return a+b;
-}
-function sub(a,b) {
-  return a-b;
-}
-function mul(a,b) {
-  return a*b;
-}
-function div(a,b) {
-  if (b) return a/b;
+  let i = b;
+  while (i > 0) {
+    c *= a;
+    i -= 1;
+  }
+  // for (i=0;i<b;i++) c*=a;
+  alert(`${a}^${b}=${c}`);
 }
