@@ -1,3 +1,5 @@
+'use strict';
+
 //window.alert('PrUvet VOLKU!');
 
 // let x = 9;
@@ -678,22 +680,263 @@
 // }
 
 // 3. Запросить число и степень. Возвести число в указанную степень и вывести результат.
-let a = prompt('Input base');
-let b = prompt('Input pow');
-a = Number(a);
-b = Number(b);
-if (!(isNaN(a) && isNaN(b)))
-{
-  let c = 1;
-  if (b < 0) {
-    a = 1 / a;
-    b = -b;
-  }
-  let i = b;
-  while (i > 0) {
-    c *= a;
-    i -= 1;
-  }
-  // for (i=0;i<b;i++) c*=a;
-  alert(`${a}^${b}=${c}`);
+// let a = prompt('Input base');
+// let b = prompt('Input pow');
+// a = Number(a);
+// b = Number(b);
+// if (!(isNaN(a) && isNaN(b)))
+// {
+//   let c = 1;
+//   if (b < 0) {
+//     a = 1 / a;
+//     b = -b;
+//   }
+//   let i = b;
+//   while (i > 0) {
+//     c *= a;
+//     i -= 1;
+//   }
+//   // for (i=0;i<b;i++) c*=a;
+//   alert(`${a}^${b}=${c}`);
+// }
+
+//4.
+
+
+// let a=[1,2,3,'false'];
+// const ex=console.log;
+// ex('ПрЮвет ВОЛКУ!!!');
+//
+// let ex2=alert;
+// ex2('Alert print');
+//
+// function sayHello(executor, greeting){
+//   executor(greeting);
+// }
+// sayHello(console.log,'ПрЮвет ВОЛКУ из console.log!!!');
+// sayHello(alert,'ПрЮвет ВОЛКУ из alert!!!')
+
+// let a=[1,2,3,'false'];
+// a.forEach(pow);
+// function pow(currentItem, index, a){
+//   console.log(currentItem,'*',a[index],'=',currentItem*a[index]);
+//   return currentItem*a[index];
+// }
+
+// let user={
+//   firstName: 'Maria',
+//   lastName: 'Mu',
+//   getFullName(){
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+// }
+// console.log(user.getFullName());
+
+// function User(name,surname,age){
+//   this.firstName=name;
+//   this.lastName=surname;
+//   this.age=age;
+//   this.isSubscribe=false;
+//   this.email=false;
+// }
+// let userProto=new User('','');
+// User.prototype=userProto;
+// userProto.getFullName=function getFullName(){
+//   return `${this.firstName} ${this.lastName}`;
+// }
+// //let user =new User('Maria','Mu');
+// let users=[];
+// for (let i=0;i<20;i++){
+//   let newUser=new User(`Name${i}`, `Surname${i}`, `${i+4}`);
+//   users.push(newUser);
+// }
+// console.table(users);
+// let fullUsersName=users.map(function(user) {
+//   return user.getFullName();
+// });
+// console.log(fullUsersName);
+// function isAdult(user){
+//   return user.age>=18;
+// }
+// let adultUsers=users.filter(isAdult);
+// let childrenUsers=users.filter(function(user) {
+//   return user.age<18;
+// });
+// console.log('Adult: ',adultUsers.length,', childre:',childrenUsers.length);
+// users[16].isSubscribe=true;
+// let subscribeUsers=users.filter(function(user) {
+//   return user.isSubscribe;
+// });
+// console.log('Subscribed: ',subscribeUsers.length);
+
+// function logRange(min,max) {
+//   debugger;
+//   console.log(min);
+//   if (min<max) {
+//     logRange(++min,max);
+//   }
+// }
+// logRange(1,undefined);
+
+// let arr=[];
+// function nested(level) {
+//   if (level>0){
+//     arr=arr.concat(['(']);
+//     nested(--level);
+//     arr=arr.concat([')']);
+//   }
+//   // console.log('(((()))))');
+// }
+// nested(3);
+// console.log(arr.join(''));
+
+// function nested2(level) {
+//   if (level===1) return '()';
+//   return `(${nested2(level-1)})`;
+// }
+// console.log(nested2(4));
+
+// let s;
+// function nested3(s, level) {
+//   if (level === 1) {
+//     s = '()';
+//     return s;
+//   }
+//   s = '(' + s + ')';
+//   nested3(s,level-1);
+// }
+// console.log(nested3(s,4));
+
+// function pow(a,b){
+//   // if (b<0){
+//   //   a=1/a;
+//   //   b=-b;
+//   // }
+//   // debugger;
+//   if (b===1) return a;
+//   return a*pow(a,--b);
+// }
+// console.log(pow(2,3));
+
+
+// let nestedArr=[1,2,3,,[,11,12,13,[101,102,[103]]]];
+// function customFlat(array,depth=1) {
+// let newArr=[];
+//   if (depth===0) return array.filter;
+//   //for (let arrItem of array)
+//   for (let i=0;i<array.length;i++){
+//     if(Array.isArray(array[i])){
+//       newArr=newArr.concat((customFlat(array[i],depth-1)));
+//     } else if(array[i]!==undefined) newArr.push(array[i]);
+//   }
+//   return newArr;
+// }
+// console.log(nestedArr);
+// let resultedArr=customFlat(nestedArr,Infinity);
+// console.log(resultedArr);
+
+// function sayHello() {
+//   alert('function declaration: Hello');
+// }
+//
+// const sayHello2=function () {
+//   alert('function expression: Hello');
+// }
+//
+// const arrowSayHello=()=>{
+//   alert('arrow function expression: Hello');
+// }
+//
+// sayHello();
+// sayHello2()
+// arrowSayHello();
+
+// function sum(a,b) {
+//   return a+b;
+// }
+// console.log(sum(10,16));
+// const arrowSum=(a,b)=>{
+//   return a+b;
+// }
+// console.log(arrowSum(10,16));
+
+// function say(value) {
+//   console.log(value);
+// }
+// let arrowSay=(value)=> {
+//   console.log(value);
+// }
+// say(1);
+// arrowSay(2);
+//
+// const expressionSay=function (value) {
+//   console.log(value);
+// }
+// expressionSay(3)
+//
+// let arrowPow2=base =>{
+//   return base*base;
+// }
+// console.log(arrowPow2(4));
+//
+// const arrowPow=(base,exponent)=>base**exponent;
+// console.log(arrowPow(4,3));
+//
+// let pow=(base,exp)=>{
+//   if (exp===0) return 0;
+//   if (exp===1) return base;
+//   return exp<0 ? 1/pow(base,Math.abs(exp)) : base*pow(ase,exp-1);
+// }
+
+// function sum(a){
+//   let total=null;
+//   console.log(arguments.length);
+//   for(let i=0;i<arguments.length;i++) total+=arguments[i];
+//   return total;
+// }
+// console.log(sum(1,2,3,4,5));
+//
+// let arrowSum=(...args)=>{
+//   let total=null;
+//   console.log(args.length);
+//   for(let i=0;i<args.length;i++) total+=args[i];
+//   return total;
+// }
+// console.log(arrowSum(1,2,3,4,5));
+
+// let pow = (base, exp) => {
+//   if (typeof base!=='number' || exp!=='number') throw new TypeError();
+//   if (exp === 0) return 1;
+//   if (exp === 1) return base;
+//   return exp < 0 ? 1 / pow(base, Math.abs(exp)) : base * pow(base, exp - 1);
+// }
+//
+// try {
+//   console.log(pow(2, Infinity));
+//   throw 1;
+// } catch (e) {
+//   console.error(e.message);
+//   console.log('catch');
+// } finally {
+//   console.log('finally');
+// }
+
+let fact=n=>{
+  if (typeof n!=='number') throw new TypeError('n is not a number');
+  if (!Number.isSafeInteger(n)) throw new RangeError('n is not an integer');
+  if (n<0) throw new RangeError('n is out of range');
+  if (!n) return 1;
+  return fact=n*fact(n-1);
 }
+try{
+  console.log(fact(-3));
+} catch (e) {
+  console.log(e.message);
+  if (e instanceof TypeError){
+    console.log('e instanceof TypeError');
+  }else if (e instanceof RangeError){
+    console.log('e instanceof RangeError');
+  }
+}
+
+
